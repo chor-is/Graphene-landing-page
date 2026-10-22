@@ -185,7 +185,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 350px) { .logo span { display: none; } }
 
 /* ---------- Hero / page header ---------- */
-.hero { position: relative; background: #000 url("assets/images/66.jpg") center / cover no-repeat; color: var(--base); overflow: hidden; }
+.hero { position: relative; background: #000 url("assets/images/hero-bg.webp") center / cover no-repeat; color: var(--base); overflow: hidden; }
 /* .hero { position: relative; background: var(--ink); color: var(--base); overflow: hidden; } */
 /* .hero::before { content: ""; position: absolute; inset: 0; background-image: var(--hex-dark); background-size: 56px 100px; opacity: 0.9;
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 55%); mask-image: linear-gradient(90deg, transparent 0%, #000 55%); } */
