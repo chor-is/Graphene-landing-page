@@ -42,7 +42,7 @@
 <main id="main">
 
 <!-- ============ PAGE HEADER ============ -->
-<section class="page-header">
+<section class="page-header page-header--activities">
   <div class="container">
     <p class="eyebrow">Activities &amp; Partners</p>
     <h1><span lang="en">Working together with industry</span><span lang="th">ร่วมมือกับภาคอุตสาหกรรม</span></h1>
@@ -98,19 +98,21 @@
       <p lang="en">Installation of the LPJH graphene synthesizer and technology transfer to Mitr Phol Sugarcane and Sugar Research and Development Co., Ltd. Click a photo to enlarge.</p>
       <p lang="th">การติดตั้งเครื่องสังเคราะห์กราฟีนด้วยเทคนิค LPJH และการถ่ายทอดเทคโนโลยีให้แก่บริษัท มิตรผลวิจัย พัฒนาอ้อยและน้ำตาล จำกัด คลิกที่ภาพเพื่อขยาย</p>
     </div>
-    <!-- To add a photo: copy one <figure class="gallery__item"> block and change the image path and captions. -->
+    <!-- To add a photo: copy one <figure class="gallery__item"> block and change the image path and captions.
+         Layout (desktop, 4 columns): "is-big" = 2x2 tile, "is-wide" = 2 columns wide, no class = 1 tile.
+         Keep the tiles adding up to full rows (each row = 4 tiles) so there are no gaps. -->
     <div class="gallery">
+      <figure class="gallery__item is-big reveal">
+        <button type="button" data-lightbox="assets/images/mitrphol-04.webp" data-group="gallery" data-caption-en="SLRI and Mitr Phol teams at Pilot Plant 1" data-caption-th="ทีมสถาบันฯ และมิตรผล ณ อาคาร Pilot Plant 1">
+          <img src="assets/images/mitrphol-04.webp" width="1600" height="1200" loading="lazy" alt="Group photo of SLRI and Mitr Phol staff with the synthesizer">
+        </button>
+        <figcaption><span lang="en">SLRI and Mitr Phol teams</span><span lang="th">ทีมสถาบันฯ และทีมมิตรผล</span></figcaption>
+      </figure>
       <figure class="gallery__item reveal">
         <button type="button" data-lightbox="assets/images/mitrphol-05.webp" data-group="gallery" data-caption-en="Hands-on training with the DC-LPJH synthesizer" data-caption-th="การฝึกอบรมการใช้งานเครื่อง DC-LPJH">
           <img src="assets/images/mitrphol-05.webp" width="1600" height="1200" loading="lazy" alt="Engineers gathered around the DC-LPJH synthesizer during training">
         </button>
         <figcaption><span lang="en">Hands-on training with the synthesizer</span><span lang="th">ฝึกอบรมการใช้งานเครื่องสังเคราะห์</span></figcaption>
-      </figure>
-      <figure class="gallery__item reveal">
-        <button type="button" data-lightbox="assets/images/mitrphol-02.webp" data-group="gallery" data-caption-en="Technology transfer agreement" data-caption-th="การลงนามถ่ายทอดเทคโนโลยี">
-          <img src="assets/images/mitrphol-02.webp" width="733" height="489" loading="lazy" alt="Two executives shaking hands in front of a world map wall">
-        </button>
-        <figcaption><span lang="en">Technology transfer agreement</span><span lang="th">การลงนามถ่ายทอดเทคโนโลยี</span></figcaption>
       </figure>
       <figure class="gallery__item reveal">
         <button type="button" data-lightbox="assets/images/mitrphol-07.webp" data-group="gallery" data-caption-en="Loading the reactor's 25 positions" data-caption-th="การบรรจุตัวอย่างลงในเครื่อง 25 ตำแหน่ง">
@@ -119,10 +121,10 @@
         <figcaption><span lang="en">Loading the reactor's 25 positions</span><span lang="th">บรรจุตัวอย่างลงในเครื่อง 25 ตำแหน่ง</span></figcaption>
       </figure>
       <figure class="gallery__item reveal">
-        <button type="button" data-lightbox="assets/images/mitrphol-04.webp" data-group="gallery" data-caption-en="SLRI and Mitr Phol teams at Pilot Plant 1" data-caption-th="ทีมสถาบันฯ และมิตรผล ณ อาคาร Pilot Plant 1">
-          <img src="assets/images/mitrphol-04.webp" width="1600" height="1200" loading="lazy" alt="Group photo of SLRI and Mitr Phol staff with the synthesizer">
+        <button type="button" data-lightbox="assets/images/mitrphol-02.webp" data-group="gallery" data-caption-en="Technology transfer agreement" data-caption-th="การลงนามถ่ายทอดเทคโนโลยี">
+          <img src="assets/images/mitrphol-02.webp" width="733" height="489" loading="lazy" alt="Two executives shaking hands in front of a world map wall">
         </button>
-        <figcaption><span lang="en">SLRI and Mitr Phol teams</span><span lang="th">ทีมสถาบันฯ และทีมมิตรผล</span></figcaption>
+        <figcaption><span lang="en">Technology transfer agreement</span><span lang="th">การลงนามถ่ายทอดเทคโนโลยี</span></figcaption>
       </figure>
       <figure class="gallery__item reveal">
         <button type="button" data-lightbox="assets/images/mitrphol-06.webp" data-group="gallery" data-caption-en="Operating the DC-LPJH control panel" data-caption-th="การควบคุมเครื่อง DC-LPJH">
@@ -130,13 +132,13 @@
         </button>
         <figcaption><span lang="en">Operating the control panel</span><span lang="th">การควบคุมการทำงานของเครื่อง</span></figcaption>
       </figure>
-      <figure class="gallery__item reveal">
+      <figure class="gallery__item is-wide reveal">
         <button type="button" data-lightbox="assets/images/mitrphol-03.webp" data-group="gallery" data-caption-en="Pilot Plant 1, Phu Khiao, Chaiyaphum" data-caption-th="อาคาร Pilot Plant 1 อ.ภูเขียว จ.ชัยภูมิ">
           <img src="assets/images/mitrphol-03.webp" width="1280" height="960" loading="lazy" alt="Exterior of the Pilot Plant 1 building">
         </button>
         <figcaption>Pilot Plant 1</figcaption>
       </figure>
-      <figure class="gallery__item reveal">
+      <figure class="gallery__item is-wide reveal">
         <button type="button" data-lightbox="assets/images/mitrphol-01.webp" data-group="gallery" data-caption-en="On-site training at Pilot Plant 1" data-caption-th="การอบรมการใช้งาน ณ อาคาร Pilot Plant 1">
           <img src="assets/images/mitrphol-01.webp" width="1600" height="1200" loading="lazy" alt="SLRI engineer demonstrating sample loading on the DC-LPJH synthesizer to Mitr Phol staff">
         </button>
@@ -161,18 +163,19 @@
         <h3><span lang="en">Graphene users</span><span lang="th">กลุ่มที่นำกราฟีนไปใช้ประโยชน์</span></h3>
         <span class="badge badge--light">11</span>
       </div>
+      <!-- Logo files are in assets/images/partners/. To add one: copy a line and change the file name and alt text. -->
       <div class="partners">
-        <div class="partner"><strong>Jorakay</strong><span>จระเข้</span></div>
-        <div class="partner"><strong>Graphene Creations</strong><span lang="en">Graphene products</span><span lang="th">ผลิตภัณฑ์กราฟีน</span></div>
-        <div class="partner"><strong>Baramizi Group</strong><span lang="en">Industry partner</span><span lang="th">พาร์ทเนอร์ภาคอุตสาหกรรม</span></div>
-        <div class="partner"><strong>SHERA</strong><span lang="en">Building materials</span><span lang="th">วัสดุก่อสร้าง</span></div>
-        <div class="partner"><strong>Metropolitan Electricity Authority</strong><span>การไฟฟ้านครหลวง (MEA)</span></div>
-        <div class="partner"><strong>Keyman Design</strong><span lang="en">Design</span><span lang="th">งานออกแบบ</span></div>
-        <div class="partner"><strong>CCP</strong><span lang="en">Industry partner</span><span lang="th">พาร์ทเนอร์ภาคอุตสาหกรรม</span></div>
-        <div class="partner"><strong>Gem and Jewelry Institute of Thailand</strong><span>GIT</span></div>
-        <div class="partner"><strong>Faculty of Gems</strong><span>GEMS</span></div>
-        <div class="partner"><strong>Lanhoi</strong><span lang="en">Ready-mixed concrete, Sukhothai</span><span lang="th">ลานหอย คอนกรีตผสมเสร็จ สุโขทัย</span></div>
-        <div class="partner"><strong lang="en">Community enterprise</strong><strong lang="th">กลุ่มวิสาหกิจชุมชน</strong><span lang="en">Local textile group</span><span lang="th">กลุ่มชุมชนท้องถิ่น</span></div>
+        <div class="partner partner--logo" title="Jorakay (จระเข้)"><img src="assets/images/partners/jorakay.webp" width="212" height="115" loading="lazy" alt="Jorakay (จระเข้)"></div>
+        <div class="partner partner--logo" title="Graphene Creations"><img src="assets/images/partners/graphene-creations.webp" width="166" height="68" loading="lazy" alt="Graphene Creations"></div>
+        <div class="partner partner--logo" title="Baramizi Group"><img src="assets/images/partners/baramizi.webp" width="250" height="69" loading="lazy" alt="Baramizi Group"></div>
+        <div class="partner partner--logo" title="SHERA"><img src="assets/images/partners/shera.webp" width="177" height="83" loading="lazy" alt="SHERA"></div>
+        <div class="partner partner--logo" title="Metropolitan Electricity Authority (การไฟฟ้านครหลวง)"><img src="assets/images/partners/mea.webp" width="179" height="140" loading="lazy" alt="Metropolitan Electricity Authority (การไฟฟ้านครหลวง)"></div>
+        <div class="partner partner--logo" title="Keyman Design"><img src="assets/images/partners/keyman.webp" width="92" height="95" loading="lazy" alt="Keyman Design"></div>
+        <div class="partner partner--logo" title="CCP"><img src="assets/images/partners/ccp.webp" width="112" height="60" loading="lazy" alt="CCP"></div>
+        <div class="partner partner--logo" title="Gem and Jewelry Institute of Thailand (GIT)"><img src="assets/images/partners/git.webp" width="186" height="65" loading="lazy" alt="Gem and Jewelry Institute of Thailand (GIT)"></div>
+        <div class="partner partner--logo" title="Faculty of Gems"><img src="assets/images/partners/gems.webp" width="103" height="103" loading="lazy" alt="Faculty of Gems"></div>
+        <div class="partner partner--logo" title="Lanhoi ready-mixed concrete, Sukhothai (ลานหอย)"><img src="assets/images/partners/lanhoi.webp" width="180" height="111" loading="lazy" alt="Lanhoi ready-mixed concrete, Sukhothai (ลานหอย)"></div>
+        <div class="partner partner--logo" title="Community enterprise group (กลุ่มวิสาหกิจชุมชน)"><img src="assets/images/partners/community.webp" width="213" height="128" loading="lazy" alt="Community enterprise group (กลุ่มวิสาหกิจชุมชน)"></div>
       </div>
     </div>
 
@@ -182,24 +185,16 @@
         <span class="badge badge--light">7</span>
       </div>
       <div class="partners">
-        <div class="partner"><strong>Mitr Phol Group</strong><span>กลุ่มมิตรผล</span></div>
-        <div class="partner"><strong>PTTEP</strong><span>ปตท.สผ.</span></div>
-        <div class="partner"><strong>IRPC</strong><span lang="en">Petrochemicals</span><span lang="th">ปิโตรเคมี</span></div>
-        <div class="partner"><strong>SCGC</strong><span lang="en">Chemicals</span><span lang="th">เคมีภัณฑ์</span></div>
-        <div class="partner"><strong>Lanna Resources</strong><span lang="en">Energy &amp; coal</span><span lang="th">พลังงานและถ่านหิน</span></div>
-        <div class="partner"><strong>Wacoal</strong><span lang="en">Apparel</span><span lang="th">เครื่องนุ่งห่ม</span></div>
-        <div class="partner"><strong>Baramizi Group</strong><span lang="en">Industry partner</span><span lang="th">พาร์ทเนอร์ภาคอุตสาหกรรม</span></div>
+        <div class="partner partner--logo" title="Mitr Phol Group"><img src="assets/images/partners/mitrphol.webp" width="303" height="90" loading="lazy" alt="Mitr Phol Group"></div>
+        <div class="partner partner--logo" title="PTTEP"><img src="assets/images/partners/pttep.webp" width="148" height="133" loading="lazy" alt="PTTEP"></div>
+        <div class="partner partner--logo" title="IRPC"><img src="assets/images/partners/irpc.webp" width="259" height="94" loading="lazy" alt="IRPC"></div>
+        <div class="partner partner--logo" title="SCGC"><img src="assets/images/partners/scgc.webp" width="230" height="60" loading="lazy" alt="SCGC"></div>
+        <div class="partner partner--logo" title="Lanna Resources"><img src="assets/images/partners/lanna.webp" width="346" height="109" loading="lazy" alt="Lanna Resources"></div>
+        <div class="partner partner--logo" title="Wacoal"><img src="assets/images/partners/wacoal.webp" width="136" height="111" loading="lazy" alt="Wacoal"></div>
+        <div class="partner partner--logo" title="Baramizi Group"><img src="assets/images/partners/baramizi.webp" width="250" height="69" loading="lazy" alt="Baramizi Group"></div>
       </div>
     </div>
 
-    <figure class="figure mt-4 reveal">
-      <div class="figure__frame figure__frame--white">
-        <button class="zoomable" type="button" data-lightbox="assets/images/partners.webp" data-caption-en="Partner logos" data-caption-th="โลโก้พาร์ทเนอร์">
-          <img src="assets/images/partners.webp" width="1280" height="720" loading="lazy" alt="Logos of project partners including Jorakay, SHERA, MEA, Mitr Phol, PTTEP, IRPC, SCGC, Lanna Resources and Wacoal">
-        </button>
-      </div>
-      <figcaption><span lang="en">Partner logos.</span><span lang="th">โลโก้พาร์ทเนอร์</span></figcaption>
-    </figure>
   </div>
 </section>
 
