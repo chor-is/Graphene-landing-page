@@ -1,4 +1,4 @@
-/* SLRI Graphene — shared behaviour: menu, language, reveal, count-up, tabs, accordion, lightbox */
+/* HiPER Graphene — shared behaviour: menu, language, reveal, count-up, tabs, accordion, lightbox */
 (function () {
   "use strict";
   var doc = document.documentElement;
@@ -6,7 +6,7 @@
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- Language ---------- */
-  var LANG_KEY = "slri-graphene-lang";
+  var LANG_KEY = "hiper-graphene-lang";
   function storedLang() {
     try { return localStorage.getItem(LANG_KEY); } catch (e) { return null; }
   }
@@ -193,6 +193,23 @@
         else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
       }
     });
+  }
+
+  /* ---------- Product jump bar: highlight the product in view ---------- */
+  var pnav = document.querySelector(".product-nav");
+  if (pnav && "IntersectionObserver" in window) {
+    var plinks = Array.prototype.slice.call(pnav.querySelectorAll("a"));
+    var po = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        plinks.forEach(function (a) {
+          var on = a.getAttribute("href") === "#" + en.target.id;
+          a.classList.toggle("is-active", on);
+          if (on && a.scrollIntoView) pnav.querySelector(".container").scrollTo({ left: a.offsetLeft - 20, behavior: reduceMotion ? "auto" : "smooth" });
+        });
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    plinks.forEach(function (a) { var t = document.querySelector(a.getAttribute("href")); if (t) po.observe(t); });
   }
 
   /* ---------- Year ---------- */

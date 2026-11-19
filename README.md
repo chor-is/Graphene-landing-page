@@ -1,22 +1,26 @@
-# SLRI Graphene Technology — Website
+# HiPER Graphene — Website (v2)
 
-A 3-page static website presenting the graphene technology of the Synchrotron Light Research Institute (Public Organization), Thailand: turning carbon-based waste into high-value graphene with Long Pulse Joule Heating (LPJH).
+A 3-page static product website for **HiPER Graphene**: multilayer graphene and ready-to-use graphene solutions for industry.
 
 ## Pages
 
 | File | Content |
 |---|---|
-| `index.html` | Home: key numbers, what graphene is, properties, process, why LPJH, applications |
-| `research.html` | Research & Equipment: LPJH vs exfoliation, synthesizer specs, graphene powder specs, Raman / XPS / TEM / NEXAFS results, publication, patents |
-| `activities.html` | Activities & Partners: Mitr Phol technology transfer, activity gallery, partners |
+| `index.html` | Home: about the company, what multilayer graphene is, properties, product range, industries |
+| `products.html` | Products: Multilayer Graphene powder, Graphene Cement Solution 20X, HiPER Concrete Block, Anti-Bacteria Self-Cleaning Spray, FIR Screen Printing Ink, Thermal Coil Coating |
+| `services.html` | R&D services: direct sale, custom formulation, contract manufacturing, technology licensing; partners |
 
-Shared: `styles.css`, `script.js`, images in `assets/images/`.
+Shared: `styles.css`, `script.js`. Images in `assets/images/` (HiPER logo and product images in `assets/images/hiper/`).
+
+## To fill in
+
+- Company address, phone and email in the footer of each page (`[… — to be added]`).
 
 ## Features
 
 - TH / EN language switch (remembered in the browser)
 - Responsive layout with a mobile menu
-- Tabs, accordion and an image lightbox (keyboard accessible)
+- Image lightbox (keyboard accessible), product jump bar on the products page
 - Fonts: DM Sans (English), IBM Plex Sans Thai (Thai)
 - Palette: `#0099FF` accent, `#000000`, `#FFFFFF`, `#E2E2E2`, `#33332F`
 
