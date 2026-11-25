@@ -485,6 +485,11 @@ button.zoomable:focus-visible { outline: 3px solid var(--accent); outline-offset
 /* Hero: product line-up instead of a single illustration */
 .hero__products { position: relative; display: flex; align-items: flex-end; justify-content: center; margin: 0 -70px 0 -30px; transform: scale(1.2); transform-origin: center 80%; }
 @media (max-width: 860px) { .hero__products { transform: none; margin: 8px 0 0; } }
+/* Tablets (e.g. iPad landscape/Pro): smaller line-up so it stays inside the screen and off the text */
+@media (min-width: 861px) and (max-width: 1200px) {
+  .hero__grid { grid-template-columns: 1fr 1fr; }
+  .hero__products { transform: scale(1); margin: 0; padding-left: 12px; }
+}
 /* Products overlap slightly: side items tuck behind the jerrycan */
 .hero__products img:nth-child(1) { width: 31%; margin-right: -7%; z-index: 1; }
 .hero__products img:nth-child(2) { width: 45%; z-index: 2; }
