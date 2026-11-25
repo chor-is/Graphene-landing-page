@@ -632,3 +632,81 @@ html { scroll-padding-top: calc(var(--nav-h) + 64px); }
 .contact-list a { color: var(--surface); }
 .contact-list a:hover { color: var(--accent); }
 .contact-list a[href^="mailto:"] { color: var(--accent); word-break: break-all; }
+
+/* =========================================================
+   Phones: tidier, more compact layout (<= 600px)
+   ========================================================= */
+@media (max-width: 600px) {
+  .section { padding: 52px 0; }
+  .section-head { margin-bottom: 26px; }
+  .section-head p { font-size: 1rem; }
+  h2 { font-size: 1.6rem; }
+
+  /* 1. Header: logo + menu, smaller language switch */
+  .logo__sub { display: none; }
+  .lang-switch button { padding: 4px 9px; font-size: .74rem; }
+
+  /* 2. Hero: shorter, equal-width buttons, products right under them */
+  .hero__grid { padding-top: 44px; padding-bottom: 72px; gap: 20px; }
+  .hero__sub { font-size: 1rem; }
+  .hero__ctas { margin-top: 20px; flex-wrap: nowrap; }
+  .hero__ctas .btn { flex: 1 1 0; min-height: 44px; padding: 0 12px; font-size: .9rem; }
+  .hero__products { margin: 0 auto; max-width: 340px; }
+
+  /* 3. Key numbers: 2 x 2 */
+  .stats { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .stat { padding: 14px; }
+  .stat__num { font-size: 1.5rem; }
+  .stat__label { font-size: .8rem; margin-top: 4px; }
+
+  /* 4. About pillars: 2 x 2 */
+  .about__pillars { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .about__pillars div { padding: 10px 12px; }
+  .about__pillars strong { font-size: .88rem; }
+  .about__pillars span { font-size: .78rem; }
+
+  /* 5. Properties: 2 columns, small icon, infographic hidden */
+  #properties .grid-3 { grid-template-columns: 1fr 1fr; gap: 10px; }
+  #properties .card { padding: 14px; }
+  #properties .card__icon { width: 34px; height: 34px; border-radius: 9px; margin-bottom: 10px; }
+  #properties .card__icon svg { width: 18px; height: 18px; }
+  #properties .card h3 { font-size: .95rem; }
+  #properties .card p { font-size: .82rem; line-height: 1.45; }
+  #properties .figure { display: none; }
+
+  /* 6. Product cards: swipe sideways */
+  .products-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px;
+    margin: 0 calc(-1 * var(--gutter)); padding: 4px var(--gutter) 14px; scrollbar-width: none; }
+  .products-grid::-webkit-scrollbar { display: none; }
+  .products-grid > .product-card { flex: 0 0 78%; scroll-snap-align: start; }
+  .product-card__body { padding: 16px; }
+  .product-card h3 { font-size: 1.02rem; }
+  .product-card p { font-size: .88rem; }
+
+  /* 7. Industries: compact, wheel image hidden */
+  #applications .card { padding: 14px 16px; }
+  #applications .card h3 { font-size: 1rem; margin-bottom: 2px; }
+  #applications .card p { font-size: .86rem; }
+  #applications .figure { display: none; }
+
+  /* 8. Products page */
+  .page-header .container { padding-top: 40px; padding-bottom: 36px; }
+  .product__hero { min-height: 240px; }
+  .product__hero img { max-height: 260px; }
+  .benefits li { padding: 12px 12px 12px 40px; font-size: .86rem; }
+  .benefits li::before { left: 12px; top: 14px; }
+  .how ol { gap: 8px; }
+  .how li { padding: 10px; font-size: .84rem; }
+  .uses__grid { grid-template-columns: repeat(2, 1fr); }
+  .mech { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .mech figcaption { padding: 8px; font-size: .74rem; }
+  .mech figcaption strong { font-size: .8rem; }
+  .results { padding: 16px; }
+
+  /* 9. Services page */
+  .rd-flow { grid-template-columns: 1fr 1fr; }
+
+  /* 10. CTA + footer */
+  .cta { padding: 28px 22px; }
+  .footer { padding-top: 44px; }
+}
