@@ -614,3 +614,9 @@ html { scroll-padding-top: calc(var(--nav-h) + 64px); }
 .service li { position: relative; padding-left: 18px; font-size: .94rem; color: var(--deep); }
 .service li::before { content: ""; position: absolute; left: 0; top: .62em; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
 .rd-flow .flow__step { border-top-color: var(--accent); }
+
+/* Footer company details */
+.footer__company { color: var(--base); font-weight: 700; }
+.contact-list a { color: var(--surface); }
+.contact-list a:hover { color: var(--accent); }
+.contact-list a[href^="mailto:"] { color: var(--accent); word-break: break-all; }

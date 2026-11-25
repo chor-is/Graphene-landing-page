@@ -14,7 +14,7 @@ Shared: `styles.css`, `script.js`. Images in `assets/images/` (HiPER logo and pr
 
 ## To fill in
 
-- Company address, phone and email in the footer of each page (`[… — to be added]`).
+- Company phone number (not provided yet).
 
 ## Features
 
